@@ -1,0 +1,80 @@
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.25fr;
+    grid-template-areas:
+    "nombre nombre"
+    "mensaje mensaje"
+    "lista carrito"
+    "vacio pie";
+    gap: 0.5em;
+    
+}
+.empresa {
+    grid-area: nombre;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    
+}
+.mensaje{
+    grid-area: mensaje;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0px;
+    height: 100px;
+    padding-top: 20px;
+    font-size: 2em;
+
+}
+.lista {
+    grid-area: lista;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    font-size: 2em;
+}
+.carrito {
+    grid-area: carrito;
+    justify-content: center ;
+    align-items: center;
+    font-size: 2em;
+    
+}  
+.pie {
+    grid-area: pie;
+   background-color:  darkgrey;
+   text-align: justify;
+
+}
+
+.vacio {
+    grid-area: vacio;
+    background-color:  darkgrey;
+}
+table{
+    width: 100%;
+}
+.titulo{
+    height: 10px;
+}
+#suma{
+    width: 500px;
+    /* height: 10px; */
+    background: white;
+    border: 1px solid gray;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    border: solid white ;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+/* .mensajeOut{
+    display: none;
+} */

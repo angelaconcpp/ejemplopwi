@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contenedor titulo">
+        <div class="jumbotron jumbotron-fluid empresa" >
+              <h1 class="display-4" ></h1>
+         </div>
+            
+        <div class="card">
+            <div class="lista card-header">
+              Lista de Productos
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <table class ="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio Unitario</th>
+                        <th scope="col"># a comprar</th>
+                        <th scope="col">Accion</th>
+                      </tr>
+                    </thead>
+                    <tbody id="detalleLista">
+
+                    </tbody>
+                </table>
+              </blockquote>
+            </div>
+           
+        </div>
+       
+        <div class="card">
+            <div class="carrito card-header">
+              Carrito de compras
+            </div>
+            <div class=" card-body">
+              <blockquote class="blockquote mb-0">
+                  <table class="table table-striped" id="tablaCarro">
+                      <thead>
+                          <th scope="col">Nombre</th>
+                          <th scope="col"># comprada</th>
+                          <th scope="col">P.Unitario</th>
+                          <th scope="col">P.Total</th>
+                          <th scope="col">Accion</th>
+                      </thead>
+                      <tbody id="detalleCarrito">
+
+                      </tbody>
+                  </table>
+             
+              </blockquote>
+            </div>
+            
+        </div>
+        
+        <div class="pie alert alert-dark" role="aler"> 
+          <span><button type="button" class="btn btn-secondary  btn-lg" id="btnTotal" onclick="calcular()" > Total</button></span>
+          <span id="suma"> </span>
+        </div>
+    </div>
+    <script src="JS/producto.js"></script>
+    
+</body>
+</html>
